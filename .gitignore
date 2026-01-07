@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Distribution / Build
+build/
+dist/
+*.spec
+
+# PyInstaller
+*.manifest
+
+# Logs
+logs/
+*.log
+
+# Project specific
+output/
+data/history.json
+
+# IDEs
+.vscode/
+.idea/
+
+# Config (Do not commit real keys)
+config/config.json
+config/config.json.bak
+# config/config.json.example is tracked

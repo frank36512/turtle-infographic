@@ -1,0 +1,107 @@
+{
+    "gemini_api_key": "",
+    "api_base_url": "https://generativelanguage.googleapis.com",
+    "default_model": "gemini-2.0-flash-exp",
+    "save_path": "./output/infographics",
+    "language": "zh-CN",
+    "api_presets": [
+        {
+            "name": "example_preset",
+            "api_key": "",
+            "api_url": "https://generativelanguage.googleapis.com",
+            "model": "gemini-2.0-flash-exp",
+            "is_default": true
+        }
+    ],
+    "purpose_categories": {
+        "逼真场景摄影": {
+            "desc": "照片级真实感的场景，使用摄影术语和专业光照",
+            "template": "A photorealistic {shot_type} of {subject}, {content}. The scene is illuminated by {lighting}, creating a {mood} atmosphere. Captured with {camera_details}, emphasizing {key_details}. {aspect_ratio} format."
+        },
+        "风格化插画贴纸": {
+            "desc": "可爱/卡通/艺术风格的插画，适合贴纸、图标、素材",
+            "template": "A {art_style} illustration of {subject}, featuring {content}. The design should have {line_style} and {color_palette}. {aspect_ratio} format. Background: {background_type}."
+        },
+        "文字准确渲染": {
+            "desc": "徽标、海报、图表等需要精确文字的设计",
+            "template": "Create a {design_type} with the text \"{text_content}\" in a {font_style} font. {content}. The design should be {style_description}, with a {color_scheme}. {aspect_ratio} format."
+        },
+        "产品模型摄影": {
+            "desc": "电子商务、广告用的专业商品照片",
+            "template": "A high-resolution, studio-lit product photograph of {product_desc} on a {background_surface}. The lighting is {lighting_setup} to {lighting_purpose}. The camera angle is {angle_type} to showcase {key_feature}. Ultra-realistic, sharp focus. {aspect_ratio} format."
+        },
+        "极简负空间设计": {
+            "desc": "网站背景、演示文稿用的简约设计",
+            "template": "A minimalist composition featuring {subject} positioned in the {position} of the frame. The background is a vast {color} canvas, creating significant negative space. Soft, subtle lighting. {aspect_ratio} format."
+        },
+        "信息图表数据可视化": {
+            "desc": "教育性、数据性的信息图表",
+            "template": "Create a {style} infographic that explains {content}. Show {key_elements}. The style should be {visual_style}, suitable for {target_audience}. Include clear labels and visual hierarchy. {aspect_ratio} format."
+        },
+        "连续艺术漫画": {
+            "desc": "多分格漫画、故事板",
+            "template": "Make a {panel_count} panel comic in a {art_style} style. {content}. Maintain character consistency across panels."
+        },
+        "使用实时数据": {
+            "desc": "基于Google搜索的实时信息生成（需Gemini 3 Pro）",
+            "template": "Using Google Search, create {design_type} showing {content}. {style_requirements}. {aspect_ratio} format."
+        }
+    },
+    "shot_types": {
+        "close-up": "特写镜头",
+        "wide-angle shot": "广角镜头",
+        "macro shot": "微距镜头",
+        "portrait": "肖像镜头",
+        "full-body shot": "全身镜头",
+        "bird's eye view": "俯瞰视角",
+        "low-angle perspective": "仰视视角",
+        "over-the-shoulder": "过肩镜头"
+    },
+    "lighting_types": {
+        "natural sunlight": "自然阳光",
+        "golden hour light": "黄金时刻光线",
+        "soft diffused light": "柔和漫射光",
+        "dramatic side lighting": "戏剧性侧光",
+        "studio lighting": "工作室灯光",
+        "neon lighting": "霓虹灯光",
+        "candlelight": "烛光",
+        "backlight": "背光"
+    },
+    "art_styles": {
+        "cute kawaii": "可爱日系",
+        "modern minimalist": "现代极简",
+        "hand-drawn sketch": "手绘草图",
+        "watercolor": "水彩画",
+        "flat design": "扁平化设计",
+        "3D rendered": "3D渲染",
+        "pixel art": "像素艺术",
+        "vintage poster": "复古海报"
+    },
+    "image_sizes": {
+        "1K": "标准分辨率（1024px）",
+        "2K": "高分辨率（2048px）",
+        "4K": "超高分辨率（4096px，仅Gemini 3 Pro）"
+    },
+    "ratio_presets": {
+        "1:1": "正方形",
+        "2:3": "竖屏照片",
+        "3:2": "横屏照片",
+        "3:4": "手机竖屏",
+        "4:3": "标准显示器",
+        "4:5": "社交媒体竖版",
+        "5:4": "社交媒体横版",
+        "9:16": "短视频竖屏",
+        "16:9": "宽屏视频",
+        "21:9": "超宽屏"
+    },
+    "style_categories": {
+        "3D拟真": "立体感强、真实感高的3D风格，突出空间层次和实体质感，适合产品展示、数据可视化",
+        "极简": "简洁明了、现代感强的扁平化设计，无多余装饰，色彩纯净，适合流程说明、基础信息图",
+        "赛博": "未来感、科技感的数字化风格，含霓虹光效、代码元素、金属质感，适合科技产品、技术原理",
+        "复古": "经典复古、怀旧情怀的设计风格，采用复古色调、纹理，适合历史主题、怀旧内容",
+        "艺术": "艺术化、自然有机的创意风格，融入自然元素、手绘质感，适合科普、文化主题",
+        "电影视觉": "电影质感、戏剧化的视觉效果，高对比度、电影色调，适合重点突出、氛围营造",
+        "材质纹理": "强调材质质感和纹理细节，如纸张、木纹、金属纹理，适合产品细节、材质展示",
+        "抽象概念": "抽象化、概念化的艺术表达，用几何图形、色彩块传递核心概念，适合哲学、创意主题"
+    }
+}
